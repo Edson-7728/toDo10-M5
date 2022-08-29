@@ -1,5 +1,7 @@
 import S from './Header.module.css'
 import { Link } from 'react-router-dom'
+import Cadastrar from '../Itens/Cadastrar'
+import Clientes from '../Itens/Clientes'
 
 
 const Header = () => {
@@ -9,8 +11,8 @@ const Header = () => {
                 <h1>Venture Labs</h1>
                 <h2>Questionário</h2>
                 <nav>
-                <Link className={S.link} to='/cadastrar'>+ Cadastrar</Link>
-                <Link className={S.link} to='/clientes'>Clientes</Link>
+                    <Link className={S.link} to='/cadastrar'>+ Cadastrar</Link>
+                    <Link className={S.link} to='/clientes'>Clientes</Link>
                 </nav>
             </header>
         </div>

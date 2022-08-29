@@ -5,6 +5,12 @@
     height: 680px;
 }
 
+.caixa {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .header {
     width: 25%;
     height: 680px;
