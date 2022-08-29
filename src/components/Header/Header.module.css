@@ -1,0 +1,18 @@
+.divContainer {
+    background-image: url('https://www.unimedriopreto.com.br/blog/wp-content/uploads/2021/09/an%C3%A1lises-cl%C3%ADnicas.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 680px;
+}
+
+.header {
+    width: 25%;
+    height: 680px;
+    background-color: #e7d9b4;
+    color: #78a890;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+}
