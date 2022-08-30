@@ -41,6 +41,7 @@ const CadastroProvider = ({children}) => {
         dados: dados,
         handleChange: handleChange,
         handleClick: handleClick,
+        campo: campo
     }
   return (
     <CadastroContext.Provider value={contexto}>{children}</CadastroContext.Provider>
