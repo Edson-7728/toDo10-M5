@@ -1,20 +1,26 @@
 import S from './Header.module.css'
 import { Link } from 'react-router-dom'
-import Cadastrar from '../Itens/Cadastrar'
-import Clientes from '../Itens/Clientes'
-
+import Formulario from '../../pages/Formulario/Formulario'
+import Clientes from '../../pages/Clientes/Clientes'
+import Home from '../../pages/Home/Home'
 
 const Header = () => {
     return (
-        <div className={S.divContainer}>
+        <div className={S.divContainer}>            
             <header className={S.header}>
-                <h1>Venture Labs</h1>
-                <h2>Questionário</h2>
+                <h1>Venture</h1>
+                <h2>Labs</h2>
                 <nav>
-                    <Link className={S.link} to='/cadastrar'>+ Cadastrar</Link>
-                    <Link className={S.link} to='/clientes'>Clientes</Link>
+                    <Link className={S.link} to='/'> HOME </Link>
+                    <Link className={S.link} to='/Formulario'> + Cadastrar </Link>
+                    <Link className={S.link} to='/Clientes'>Clientes</Link>
                 </nav>
             </header>
+            <div className={S.s}>
+                <Home />
+                {/* <Formulario />
+                <Clientes /> */}
+            </div>
         </div>
     )
 }

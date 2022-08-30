@@ -3,6 +3,8 @@
     background-size: cover;
     width: 100%;
     height: 680px;
+    display: flex;
+    flex-direction: row;
 }
 
 .caixa {
@@ -14,11 +16,19 @@
 .header {
     width: 25%;
     height: 680px;
-    background-color: #e7d9b4;
+    background-color: #e7d9b4b9;
     color: #78a890;
 }
 
-.nav {
+.header > nav {
     display: flex;
     flex-direction: column;
+    font-weight: bold;
+    margin-top: 20%;
+}
+
+.link {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 22pt;
 }
