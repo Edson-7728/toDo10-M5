@@ -1,3 +1,4 @@
+import React from 'react'
 
 const Card1 = ({nome, sobrenome, telefone, cep, endereco1, endereco2, dataNascimento, cpf, rendaMensal}) => {
   return (

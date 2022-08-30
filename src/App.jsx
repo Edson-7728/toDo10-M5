@@ -1,17 +1,18 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Header from './components/Header/Header'
-import Cadastrar from './components/Itens/Cadastrar'
-import Clientes from './components/Itens/Clientes'
+import Formulario from '../src/pages/Formulario/Formulario'
+import Clientes from './pages/Clientes/Clientes'
+import Home from './pages/Home/Home'
 
 function App() {
   return (
     <BrowserRouter>
     <Header />
     <Routes>
-    <Route path='/cadastrar' element={<Cadastrar />} />
+    <Route path='/' element={<Home />} />
+    <Route path='/cadastrar' element={<Formulario />} />
     <Route path='/clientes' element={<Clientes />} />
     </Routes>
     

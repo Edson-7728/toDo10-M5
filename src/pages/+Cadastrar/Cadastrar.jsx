@@ -1,3 +1,4 @@
+import React from 'react'
 import S from './Cadastrar.module.css'
 import Formulario from '../../components/Itens/Formulario'
 

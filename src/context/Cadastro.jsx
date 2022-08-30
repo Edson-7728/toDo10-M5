@@ -1,8 +1,9 @@
+import React from 'react'
 import { createContext, useState } from 'react'
 export const CadastroContext = createContext()
 
 const CadastroProvider = ({children}) => {
-    const [campo, seCampo]= useState([])
+    const [campo, setCampo]= useState([])
     const [dados, setDados] = useState({
         nome: '',
         sobrenome: '',
@@ -16,9 +17,8 @@ const CadastroProvider = ({children}) => {
         rendaMensal: ''
     })
   
-    const handleChange =(e, chave)=>{
+    const handleChange =(e, chave) => {
       setDados({...dados, [chave]: e.target.value})
-      console.log( campo);
     }
     const handleClick = ()=>{
       setCampo([...campo, dados])
@@ -41,7 +41,6 @@ const CadastroProvider = ({children}) => {
         dados: dados,
         handleChange: handleChange,
         handleClick: handleClick,
-        campo: campo,
     }
   return (
     <CadastroContext.Provider value={contexto}>{children}</CadastroContext.Provider>
